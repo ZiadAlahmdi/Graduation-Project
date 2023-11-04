@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-color: #8cd0c0;
+            }
+
+            .in{
+
+            }
+            .pic{
+                height: 600px;
+                width: 70px;
+                float: left;
+
+            }
+            .con{
+                width: 400px;
+                height: 400px;
+                display: inline-grid;
+                background-color: white;
+                text-align: center;
+                border-radius: 5px;
+
+
+            }
+        </style>
+        <script>
+
+            function auth() {
+                var user = document.getElementById("username").value;
+                var pass = document.getElementById("pass").value;
+
+                if (user.length > 0 && pass.length > 0) {
+                    window.location.assign("Student_Interface.html");
+                } else
+                    window.alert("Please enter the ID & Password");
+            }
+
+        </script>
+    </head>
+    <body>
+        <img src="logo-no-background.png" style="height: 100px" >
+        <h1 style="text-align: center">Welcome to JIC Portal</h1>
+
+        <div class="con" style="margin-top: 80px; margin-left: 10px">
+            <input  type="number"  id="username" placeholder="IDss" style="margin-top: 150px;  margin-left: 40px; font-family: unset; font-size: 20px; height: 40px; width: 80%; " required="">
+            <input  type="password" class="in" placeholder="Password" id="pass" style="margin-top: 30px; margin-left: 40px; font-family: unset; font-size: 20px; height: 40px; width: 80%" required="">
+            <input  type="submit" class="in" value="Login" onclick="auth()" style="margin-top: 30px; margin-left: 50px; height: 50px; width: 70%; background-color: #19A081; color: white; border: none; font-size: 20px " >
+        </div>
+
+        <div class="con" style="margin-top: 80px; margin-left: 80px">
+            <h1 style="margin-top: 150px; margin-left: 10px; font-family: unset;  color: #19A081"> Study Plans</h1>
+            <a href="StudyPlan.html" style="margin-top: 30px; margin-left: 10px; font-family: unset;  font-size: 20px; color: #19A081 ">Click Here</a>
+
+        </div>
+
+        <div class="con" style="margin-top: 80px; margin-left: 80px">
+            <h1 style="margin-top: 150px; margin-left: 10px; font-family: unset;  color: #19A081"> Courses Description</h1>
+            <a href="course_desc.html" style="margin-top: 30px; margin-left: 10px; font-family: unset;  font-size: 20px; color: #19A081 ">Click Here</a>
+
+        </div>
+
+
+
+    </body>
+</html>
